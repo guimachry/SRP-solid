@@ -1,4 +1,4 @@
-// Classe que faz várias coisas, violando o SRP
+// essa classe faz várias coisas e viola o principio de responsabilidade unica
 class Pedido {
     private double valor;
 
@@ -10,12 +10,12 @@ class Pedido {
         return valor;
     }
 
-    // Violação do SRP: processar pagamento está fora da responsabilidade de um pedido
+    
     public void processarPagamento(String metodoPagamento) {
         System.out.println("Processando pagamento de " + calcularTotal() + " usando " + metodoPagamento);
     }
 
-    // Violação do SRP: gerar recibo está fora da responsabilidade de um pedido
+   
     public void gerarRecibo() {
         System.out.println("Recibo gerado para o pedido de valor total: " + calcularTotal());
     }
