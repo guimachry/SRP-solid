@@ -29,11 +29,14 @@ namespace Lab.Principles.Solid
             Console.WriteLine($"Texto: {livro.Texto}");
         }
 
-        public void ImprimirTextoEmOutroMeio(string texto)
-        {
-          
-            Console.WriteLine($"{texto}");
-        }
+       
     }
+
+ public class ImprimirTextoEmOutroMeio(Livro livro)
+        {
+            Console.log("imprimindo na impressora");
+            Console.WriteLine($"Nome do livro: {livro.Nome}");
+            Console.WriteLine($"Texto: {livro.Texto}");
+        }
 
 }
