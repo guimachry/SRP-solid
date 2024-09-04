@@ -32,7 +32,7 @@ namespace Lab.Principles.Solid
        
     }
 
- public class ImprimirTextoNaImpressora(Livro livro)
+     public class ImprimirTextoNaImpressora(Livro livro)
         {
             Console.log("imprimindo na impressora");
             Console.WriteLine($"Nome do livro: {livro.Nome}");
