@@ -1,4 +1,4 @@
-// Classe responsável por representar um pedido
+
 class Pedido {
     private double valor;
 
@@ -12,18 +12,18 @@ class Pedido {
     }
 }
 
-// Classe responsável por processar pagamentos
+
 class ProcessadorPagamento {
-    // Responsabilidade única: processar o pagamento de um pedido
+   
     public void processar(Pedido pedido, String metodoPagamento) {
         double total = pedido.calcularTotal();
         System.out.println("Processando pagamento de " + total + " usando " + metodoPagamento);
     }
 }
 
-// Classe responsável por gerar recibos
+
 class GeradorRecibo {
-    // Responsabilidade única: gerar o recibo de um pedido
+
     public void gerarRecibo(Pedido pedido) {
         System.out.println("Recibo gerado para o pedido de valor total: " + pedido.calcularTotal());
     }
