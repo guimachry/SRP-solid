@@ -25,8 +25,8 @@ namespace Lab.Principles.Solid
     {
         public void ImprimirTextoNoConsole(Livro livro)
         {
-            Console.WriteLine($"Nome do livro: {livro.Nome}");
-            Console.WriteLine($"Texto: {livro.Texto}");
+            Console.WriteLine("Nome do livro: {livro.Nome}");
+            Console.WriteLine("Texto: {livro.Texto}");
         }
 
        
@@ -35,8 +35,8 @@ namespace Lab.Principles.Solid
      public class ImprimirTextoNaImpressora(Livro livro)
         {
             Console.log("imprimindo na impressora");
-            Console.WriteLine($"Nome do livro: {livro.Nome}");
-            Console.WriteLine($"Texto: {livro.Texto}");
+            Console.WriteLine("Nome do livro: {livro.Nome}");
+            Console.WriteLine("Texto: {livro.Texto}");
         }
 
 }
