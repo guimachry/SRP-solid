@@ -18,7 +18,7 @@ namespace Lab.Principles.Solid
 
         public void ImprimirTextoNoConsole(string texto)
         {
-            Console.WriteLine($"Nome do livro: {texto}");
+            Console.WriteLine("Nome do livro: {texto}");
         }
     }
 }
